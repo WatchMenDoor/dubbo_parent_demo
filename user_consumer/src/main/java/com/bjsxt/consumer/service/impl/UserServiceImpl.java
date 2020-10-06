@@ -28,6 +28,7 @@ public class UserServiceImpl implements UserService {
     private DeleteUserService deleteUserService;
     @Override
     public void addUser(Users users) {
+
         this.addUserService.addUser(users);
     }
 
@@ -37,6 +38,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public List<Users> getUsersAll() {
+
         return this.findUserService.findUserAll();
     }
     /**
