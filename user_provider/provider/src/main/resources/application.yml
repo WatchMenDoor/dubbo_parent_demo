@@ -1,0 +1,24 @@
+# 配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bjsxt?serverTimezone=UTC
+    username: root
+    password: 123123
+#Mybatis 配置
+mybatis:
+  type-aliases-package: com.bjsxt.pojo
+#Dubbo 配置
+dubbo:
+  application:
+  name: myProvider
+  registry:
+    address: zookeeper://192.168.9.133:2181
+    timeout: 10000
+  # 配置服务协议及端口
+  protocol:
+    name: dubbo
+    port: 20880
+  # 配置 Dubbo 扫描包
+  scan:
+    base-packages: com.bjsxt.provider.service.impl

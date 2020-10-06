@@ -11,7 +11,7 @@
         <module>user_api</module>
         <module>user_consumer</module>
         <module>user_provider</module>
-        <module>pojo</module>
+
     </modules>
     <packaging>pom</packaging>
 

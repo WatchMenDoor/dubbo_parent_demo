@@ -35,7 +35,7 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
-    54
+
     <build>
         <plugins>
             <!--MyBatis Generator Plugin-->
